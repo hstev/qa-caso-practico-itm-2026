@@ -1,0 +1,52 @@
+# Plan ZAP Automation Framework - análisis dinámico (DAST) de OWASP Juice Shop
+# Pasivo + spider + escaneo activo acotado en tiempo. Objetivo SOLO la red interna del laboratorio.
+env:
+  contexts:
+    - name: juice-shop
+      urls: ["http://juice-shop:3000"]
+      includePaths: ["http://juice-shop:3000.*"]
+      excludePaths:
+        - "http://juice-shop:3000/socket.io.*"
+  parameters:
+    failOnError: true
+    progressToStdout: true
+jobs:
+  - type: passiveScan-config
+    parameters: { maxAlertsPerRule: 10 }
+  - type: requestor
+    requests:
+      - { url: "http://juice-shop:3000/" }
+      - { url: "http://juice-shop:3000/rest/products/search?q=apple" }
+      - { url: "http://juice-shop:3000/api/Products" }
+      - { url: "http://juice-shop:3000/rest/track-order/5267-f9cd5882f54c75a3" }
+      - { url: "http://juice-shop:3000/rest/user/whoami" }
+      - { url: "http://juice-shop:3000/ftp/" }
+      - { url: "http://juice-shop:3000/rest/admin/application-configuration" }
+      - url: "http://juice-shop:3000/rest/user/login"
+        method: POST
+        httpVersion: HTTP/1.1
+        headers: ["Content-Type: application/json"]
+        data: '{"email":"test@itm-qa.test","password":"test123"}'
+      - url: "http://juice-shop:3000/api/Feedbacks"
+        method: POST
+        httpVersion: HTTP/1.1
+        headers: ["Content-Type: application/json"]
+        data: '{"comment":"zap","rating":3,"captchaId":0,"captcha":"0"}'
+  - type: spider
+    parameters: { context: juice-shop, maxDuration: 3 }
+  - type: passiveScan-wait
+    parameters: { maxDuration: 5 }
+  - type: activeScan
+    parameters:
+      context: juice-shop
+      maxScanDurationInMins: 25
+      maxRuleDurationInMins: 3
+      threadPerHost: 4
+  - type: passiveScan-wait
+    parameters: { maxDuration: 5 }
+  - type: report
+    parameters: { template: traditional-html, reportDir: /zap/wrk, reportFile: zap-full-report.html, reportTitle: "OWASP ZAP - Juice Shop (Caso Práctico ITM 2026)" }
+  - type: report
+    parameters: { template: traditional-json, reportDir: /zap/wrk, reportFile: zap-full-report.json }
+  - type: report
+    parameters: { template: traditional-md, reportDir: /zap/wrk, reportFile: zap-full-report.md }
