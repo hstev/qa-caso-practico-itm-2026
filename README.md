@@ -3,8 +3,8 @@
 Laboratorio de QA **aislado en Docker** sobre **OWASP Juice Shop v20.3.0**: pruebas manuales y automatizadas
 (Playwright + TypeScript), rendimiento (k6), SAST (SonarQube) y DAST (OWASP ZAP).
 
-**Informe:** [`docs/Informe-Caso-Practico-QA-ITM-2026.docx`](docs/Informe-Caso-Practico-QA-ITM-2026.docx)
-(diseño según el Manual de Imagen ITM 2025).
+**Informe:** el informe final (.docx, diseño según el Manual de Imagen ITM 2025) no se versiona; se
+genera localmente en `docs/` con el comando de la sección «Regenerar el informe» y se entrega por Teams.
 
 ## Aislamiento
 
@@ -47,6 +47,6 @@ docker run --rm -u "$(id -u):$(id -g)" -e HOME=/tmp -w /work/docs/generator -v "
 | `reports/` | Reportes y evidencias exportadas |
 | `.github/workflows/qa.yml` | Pipeline CI/CD |
 | `.github/ISSUE_TEMPLATE/defecto.yml` | Plantilla de defectos |
-| `docs/` | Informe y su generador |
+| `docs/` | Generador del informe y recursos gráficos |
 
 > Juice Shop es una aplicación **intencionalmente vulnerable**. No la exponga fuera de `127.0.0.1`.

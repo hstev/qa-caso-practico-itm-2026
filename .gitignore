@@ -10,3 +10,7 @@ reports/evidence/evidence-artifacts/
 *.webm
 # Temporales de Word
 ~$*.docx
+
+# Informe final (se entrega por Teams, no se versiona)
+docs/*.docx
+docs/*.pdf

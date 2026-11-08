@@ -1,0 +1,7 @@
+{
+  "name": "informe-qa-itm",
+  "private": true,
+  "description": "Genera el informe .docx del Caso Práctico Final ITM 2026 (se ejecuta en contenedor node:22)",
+  "scripts": { "build": "node logo.js && node build.js" },
+  "dependencies": { "docx": "9.12.0", "pngjs": "7.0.0" }
+}
