@@ -1,0 +1,1590 @@
+info: Detected Node.js version v24.21.0 (SUCCESS)
+info: Detected OS linux (SUCCESS)
+info: Detected CPU x64 (SUCCESS)
+info: Configuration unsafe validated (SUCCESS)
+info: Entity models 21 of 21 are initialized (SUCCESS)
+info: All dependencies in ./package.json are satisfied (SUCCESS)
+info: Required file server.js is present (SUCCESS)
+info: Required file index.html is present (SUCCESS)
+info: Required file polyfills.js is present (SUCCESS)
+info: Required file styles.css is present (SUCCESS)
+info: Required file main.js is present (SUCCESS)
+info: Required file matching /^hacking-instructor-.+\.js$/ is present (SUCCESS)
+info: Port 3000 is available (SUCCESS)
+info: Domain https://www.alchemy.com/ is reachable (SUCCESS)
+warn: Environment variable ALCHEMY_API_KEY is not present (WARNING)
+warn: "Mint the Honey Pot" challenge will not work as intended without a valid ALCHEMY_API_KEY
+warn: "Wallet Depletion" challenge will not work as intended without a valid ALCHEMY_API_KEY
+info: Check https://howto-web3.owasp-juice.shop for instructions on how to set up and configure the Alchemy API
+warn: Domain http://localhost:11434/v1 is not reachable (WARNING)
+warn: "Chatbot Prompt Injection" challenge will not work as intended without access to http://localhost:11434/v1
+warn: "Greedy Chatbot Manipulation" challenge will not work as intended without access to http://localhost:11434/v1
+warn: "AI Debugging" challenge will not work as intended without access to http://localhost:11434/v1
+warn: "System Prompt Extraction" challenge will not work as intended without access to http://localhost:11434/v1
+info: Check https://howto-llm.owasp-juice.shop for instructions on how to set up and configure the LLM API
+info: Server listening on port 3000
+info: Solved 1-star zeroStarsChallenge (Zero Stars)
+info: Cheat score for zeroStarsChallenge solved in 3min (expected ~2min) with hints allowed: 0
+info: Solved 2-star loginAdminChallenge (Login Admin)
+info: Cheat score for tutorial loginAdminChallenge solved in 0min (expected ~2min) with hints allowed: 0.9881583333333334
+UnauthorizedError: No Authorization header was found
+info: Solved 1-star errorHandlingChallenge (Error Handling)
+info: Cheat score for trivial errorHandlingChallenge solved in 0min (expected ~0min) with hints allowed: 0
+info: Solved 3-star loginJimChallenge (Login Jim)
+info: Cheat score for tutorial loginJimChallenge solved in 2min (expected ~3min) with hints allowed: 0.4325833333333333
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+info: Solved 1-star directoryListingChallenge (Confidential Document)
+info: Cheat score for directoryListingChallenge solved in 6min (expected ~2min) with hints allowed and 100% expected preceding URL interaction: 0
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Unexpected path: /api
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/login
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Unexpected path: /api/2962342929269667076
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:139:16
+    at FSReqCallback.oncomplete (node:fs:197:21)
+Error: ENOENT: no such file or directory, stat '/juice-shop/ftp/quarantine/953288724655389494'
+Error: Unexpected path: /rest/6985161863485022736
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin/5180142594140859915
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products/6531114857580069941
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/9207423844629135843
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "x": syntax error
+Error: WHERE parameter "captchaId" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1770:13)
+    at /juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1761:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1759:35)
+    at SQLiteQueryGenerator.getWhereConditions (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2108:19)
+    at SQLiteQueryGenerator.selectQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1015:28)
+    at SQLiteQueryInterface.select (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Captcha.findAll (/juice-shop/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Captcha.findOne (/juice-shop/node_modules/sequelize/lib/model.js:1240:12)
+    at async /juice-shop/build/routes/captcha.js:33:25
+Error: WHERE parameter "captchaId" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1770:13)
+    at /juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1761:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1759:35)
+    at SQLiteQueryGenerator.getWhereConditions (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2108:19)
+    at SQLiteQueryGenerator.selectQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1015:28)
+    at SQLiteQueryInterface.select (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Captcha.findAll (/juice-shop/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Captcha.findOne (/juice-shop/node_modules/sequelize/lib/model.js:1240:12)
+    at async /juice-shop/build/routes/captcha.js:33:25
+Error: Unexpected path: /api?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: WHERE parameter "captchaId" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1770:13)
+    at /juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1761:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1759:35)
+    at SQLiteQueryGenerator.getWhereConditions (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2108:19)
+    at SQLiteQueryGenerator.selectQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1015:28)
+    at SQLiteQueryInterface.select (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Captcha.findAll (/juice-shop/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Captcha.findOne (/juice-shop/node_modules/sequelize/lib/model.js:1240:12)
+    at async /juice-shop/build/routes/captcha.js:33:25
+UnauthorizedError: No Authorization header was found
+Error: Unexpected path: /api?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: WHERE parameter "captchaId" has invalid "undefined" value
+    at SQLiteQueryGenerator.whereItemQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1770:13)
+    at /juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1761:25
+    at Array.forEach (<anonymous>)
+    at SQLiteQueryGenerator.whereItemsQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1759:35)
+    at SQLiteQueryGenerator.getWhereConditions (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:2108:19)
+    at SQLiteQueryGenerator.selectQuery (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-generator.js:1015:28)
+    at SQLiteQueryInterface.select (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:59)
+    at Captcha.findAll (/juice-shop/node_modules/sequelize/lib/model.js:1140:47)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async Captcha.findOne (/juice-shop/node_modules/sequelize/lib/model.js:1240:12)
+    at async /juice-shop/build/routes/captcha.js:33:25
+UnauthorizedError: No Authorization header was found
+Error: Unexpected path: /rest?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin/application-configuration?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin/application-configuration?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order/5267-f9cd5882f54c75a3?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products/search?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order/5267-f9cd5882f54c75a3?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/whoami?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/whoami?-d+allow_url_include%3d1+-d+auto_prepend_file%3dphp:/input
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "https": syntax error
+Error: SQLITE_ERROR: near "http": syntax error
+Error: SQLITE_ERROR: near "https": syntax error
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async SQLiteQueryInterface.select (/juice-shop/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async Captcha.findAll (/juice-shop/node_modules/sequelize/lib/model.js:1140:21)
+    at async Captcha.findOne (/juice-shop/node_modules/sequelize/lib/model.js:1240:12)
+    at async /juice-shop/build/routes/captcha.js:33:25
+Error: SQLITE_ERROR: near ""<scrIpt>alert(1);</scRipt>%' OR description LIKE '%'"": syntax error
+Error: SQLITE_ERROR: unrecognized token: """
+Error: SQLITE_ERROR: near ""<img src=x onerror=prompt()>%' OR description LIKE '%'"": syntax error
+Error: Unexpected path: /api
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Unexpected path: /rest
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/admin
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/products
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/track-order
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/login
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "'%'": syntax error
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: no such function: sleep
+Error: SQLITE_ERROR: incomplete input
+Error: SQLITE_ERROR: near "where": syntax error
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "SYSTEM_COLUMNS": syntax error
+Error: SQLITE_ERROR: near ";": syntax error
+Error: SQLITE_ERROR: near "SYSTEM_COLUMNS": syntax error
+Error: SQLITE_ERROR: near "SYSTEM_COLUMNS": syntax error
+Error: SQLITE_ERROR: no such function: java.lang.Thread.sleep
+Error: SQLITE_ERROR: near "SYSTEM_COLUMNS": syntax error
+Error: SQLITE_ERROR: incomplete input
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "(": syntax error
+Error
+    at Database.<anonymous> (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:185:27)
+    at /juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (/juice-shop/node_modules/sequelize/lib/dialects/sqlite/query.js:183:12)
+    at /juice-shop/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+Error: SQLITE_ERROR: near "case": syntax error
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Unexpected path: /rest/user/login
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /rest/user/login?name=abc
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Unexpected path: /api
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Unexpected path: /api?name=abc
+    at /juice-shop/build/routes/angular.js:18:18
+    at /juice-shop/build/lib/utils.js:239:26
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/routes/verify.js:235:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:346:12)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/build/lib/insecurity.js:218:5
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+Error: Only .md and .pdf files are allowed!
+    at verify (/juice-shop/build/routes/fileServer.js:68:18)
+    at /juice-shop/build/routes/fileServer.js:52:13
+    at Layer.handle [as handle_request] (/juice-shop/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/juice-shop/node_modules/express/lib/router/index.js:328:13)
+    at /juice-shop/node_modules/express/lib/router/index.js:286:9
+    at param (/juice-shop/node_modules/express/lib/router/index.js:365:14)
+    at param (/juice-shop/node_modules/express/lib/router/index.js:376:14)
+    at router.process_params (/juice-shop/node_modules/express/lib/router/index.js:421:3)
+    at next (/juice-shop/node_modules/express/lib/router/index.js:280:10)
+    at /juice-shop/node_modules/serve-index/index.js:149:39
+    at FSReqCallback.oncomplete (node:fs:199:5)
+
+<--- Last few GCs --->
+
+[1:0x444cf000]  1016949 ms: Mark-Compact 506.3 (514.2) -> 503.8 (514.5) MB, pooled: 0 MB, 123.65 / 0.00 ms  (average mu = 0.201, current mu = 0.097) allocation failure; scavenge might not succeed
+[1:0x444cf000]  1017086 ms: Mark-Compact 505.8 (514.7) -> 504.1 (514.2) MB, pooled: 2 MB, 133.10 / 0.00 ms  (average mu = 0.118, current mu = 0.027) allocation failure; scavenge might not succeed
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x931db0  [/nodejs/bin/node]
+ 2: 0x75968e node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/nodejs/bin/node]
+ 3: 0xc70d60  [/nodejs/bin/node]
+ 4: 0xc70e4f  [/nodejs/bin/node]
+ 5: 0xf14725  [/nodejs/bin/node]
+ 6: 0xf14752  [/nodejs/bin/node]
+ 7: 0xf14a4a  [/nodejs/bin/node]
+ 8: 0xf2574a  [/nodejs/bin/node]
+ 9: 0xf29af0  [/nodejs/bin/node]
+10: 0x19c77d1  [/nodejs/bin/node]
+ExitCode=139 OOMKilled=false FinishedAt=2026-11-08T20:01:01.949662056Z

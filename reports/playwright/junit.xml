@@ -1,0 +1,350 @@
+<testsuites id="" name="" tests="24" failures="5" skipped="0" errors="0" time="12.683421">
+<testsuite name="api/canasta.api.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="api" tests="3" failures="0" skipped="0" time="0.222" errors="0">
+<testcase name="RF04 Canasta - valores límite de cantidad (API) › TA-09 Cantidad 1 de Apple Juice =&gt; HTTP 200" classname="api/canasta.api.spec.ts" time="0.093">
+<properties>
+<property name="respuesta" value="200 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;ProductId&quot;:1,&quot;BasketId&quot;:10,&quot;id&quot;:10,&quot;quantity&quot;:1,&quot;createdAt&quot;:&quot;2026-11-08T20:02:14.912Z&quot;,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:14.912Z&quot;}}">
+</property>
+</properties>
+</testcase>
+<testcase name="RF04 Canasta - valores límite de cantidad (API) › TA-09 Cantidad 5 de Apple Juice =&gt; HTTP 200" classname="api/canasta.api.spec.ts" time="0.067">
+<properties>
+<property name="respuesta" value="200 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;ProductId&quot;:1,&quot;BasketId&quot;:11,&quot;id&quot;:11,&quot;quantity&quot;:5,&quot;createdAt&quot;:&quot;2026-11-08T20:02:14.985Z&quot;,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:15.003Z&quot;}}">
+</property>
+</properties>
+</testcase>
+<testcase name="RF04 Canasta - valores límite de cantidad (API) › TA-09 Cantidad 6 de Apple Juice =&gt; HTTP 400" classname="api/canasta.api.spec.ts" time="0.062">
+<properties>
+<property name="respuesta" value="400 {&quot;error&quot;:&quot;You can order only up to 5 items of this product.&quot;}">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="api/feedback.api.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="api" tests="6" failures="3" skipped="0" time="0.32" errors="0">
+<testcase name="RF05 Feedback - calificación (API) › TA-10 Calificación 0 =&gt; rechazada" classname="api/feedback.api.spec.ts" time="0.055">
+<properties>
+<property name="respuesta" value="201 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:10,&quot;comment&quot;:&quot;Prueba QA ITM rating 0&quot;,&quot;rating&quot;:0,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:15.121Z&quot;,&quot;createdAt&quot;:&quot;2026-11-08T20:02:15.121Z&quot;,&quot;UserId&quot;:null}}">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-7a4db-10-Calificación-0-rechazada-api/error-context.md]]
+
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-7a4db-10-Calificación-0-rechazada-api/trace.zip]]
+]]>
+</system-out>
+<failure message="El backend debería rechazar calificaciones fuera de [1,5]" type="expect.toBeGreaterThanOrEqual">
+<![CDATA[  [api] › api/feedback.api.spec.ts:16:9 › RF05 Feedback - calificación (API) › TA-10 Calificación 0 => rechazada 
+
+    Error: El backend debería rechazar calificaciones fuera de [1,5]
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    201
+
+      18 |       test.info().annotations.push({ type: 'respuesta', description: `${res.status()} ${(await res.text()).slice(0, 200)}` })
+      19 |       if (valido) expect(res.status()).toBe(201)
+    > 20 |       else expect(res.status(), 'El backend debería rechazar calificaciones fuera de [1,5]').toBeGreaterThanOrEqual(400)
+         |                                                                                              ^
+      21 |     })
+      22 |   }
+      23 | })
+        at /work/tests/api/feedback.api.spec.ts:20:94
+
+    Error Context: ../../reports/artifacts/api-feedback.api-RF05-Feed-7a4db-10-Calificación-0-rechazada-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../reports/artifacts/api-feedback.api-RF05-Feed-7a4db-10-Calificación-0-rechazada-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../reports/artifacts/api-feedback.api-RF05-Feed-7a4db-10-Calificación-0-rechazada-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="RF05 Feedback - calificación (API) › TA-10 Calificación 1 =&gt; aceptada" classname="api/feedback.api.spec.ts" time="0.062">
+<properties>
+<property name="respuesta" value="201 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:11,&quot;comment&quot;:&quot;Prueba QA ITM rating 1&quot;,&quot;rating&quot;:1,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:15.599Z&quot;,&quot;createdAt&quot;:&quot;2026-11-08T20:02:15.599Z&quot;,&quot;UserId&quot;:null}}">
+</property>
+</properties>
+</testcase>
+<testcase name="RF05 Feedback - calificación (API) › TA-10 Calificación 5 =&gt; aceptada" classname="api/feedback.api.spec.ts" time="0.036">
+<properties>
+<property name="respuesta" value="201 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:12,&quot;comment&quot;:&quot;Prueba QA ITM rating 5&quot;,&quot;rating&quot;:5,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:15.649Z&quot;,&quot;createdAt&quot;:&quot;2026-11-08T20:02:15.649Z&quot;,&quot;UserId&quot;:null}}">
+</property>
+</properties>
+</testcase>
+<testcase name="RF05 Feedback - calificación (API) › TA-10 Calificación 6 =&gt; rechazada" classname="api/feedback.api.spec.ts" time="0.051">
+<properties>
+<property name="respuesta" value="201 {&quot;status&quot;:&quot;success&quot;,&quot;data&quot;:{&quot;id&quot;:13,&quot;comment&quot;:&quot;Prueba QA ITM rating 6&quot;,&quot;rating&quot;:6,&quot;updatedAt&quot;:&quot;2026-11-08T20:02:15.695Z&quot;,&quot;createdAt&quot;:&quot;2026-11-08T20:02:15.695Z&quot;,&quot;UserId&quot;:null}}">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-116c0-10-Calificación-6-rechazada-api/error-context.md]]
+
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-116c0-10-Calificación-6-rechazada-api/trace.zip]]
+]]>
+</system-out>
+<failure message="El backend debería rechazar calificaciones fuera de [1,5]" type="expect.toBeGreaterThanOrEqual">
+<![CDATA[  [api] › api/feedback.api.spec.ts:16:9 › RF05 Feedback - calificación (API) › TA-10 Calificación 6 => rechazada 
+
+    Error: El backend debería rechazar calificaciones fuera de [1,5]
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    201
+
+      18 |       test.info().annotations.push({ type: 'respuesta', description: `${res.status()} ${(await res.text()).slice(0, 200)}` })
+      19 |       if (valido) expect(res.status()).toBe(201)
+    > 20 |       else expect(res.status(), 'El backend debería rechazar calificaciones fuera de [1,5]').toBeGreaterThanOrEqual(400)
+         |                                                                                              ^
+      21 |     })
+      22 |   }
+      23 | })
+        at /work/tests/api/feedback.api.spec.ts:20:94
+
+    Error Context: ../../reports/artifacts/api-feedback.api-RF05-Feed-116c0-10-Calificación-6-rechazada-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../reports/artifacts/api-feedback.api-RF05-Feed-116c0-10-Calificación-6-rechazada-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../reports/artifacts/api-feedback.api-RF05-Feed-116c0-10-Calificación-6-rechazada-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="RF05 Feedback - longitud del comentario (API) › TA-11 Comentario de 160 caracteres =&gt; aceptado" classname="api/feedback.api.spec.ts" time="0.064">
+<properties>
+<property name="respuesta" value="201">
+</property>
+</properties>
+</testcase>
+<testcase name="RF05 Feedback - longitud del comentario (API) › TA-11 Comentario de 161 caracteres =&gt; rechazado" classname="api/feedback.api.spec.ts" time="0.052">
+<properties>
+<property name="respuesta" value="201">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-adb74-de-161-caracteres-rechazado-api/error-context.md]]
+
+[[ATTACHMENT|artifacts/api-feedback.api-RF05-Feed-adb74-de-161-caracteres-rechazado-api/trace.zip]]
+]]>
+</system-out>
+<failure message="El backend debería rechazar comentarios &gt; 160 caracteres" type="expect.toBeGreaterThanOrEqual">
+<![CDATA[  [api] › api/feedback.api.spec.ts:27:9 › RF05 Feedback - longitud del comentario (API) › TA-11 Comentario de 161 caracteres => rechazado 
+
+    Error: El backend debería rechazar comentarios > 160 caracteres
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    201
+
+      29 |       test.info().annotations.push({ type: 'respuesta', description: `${res.status()}` })
+      30 |       if (valido) expect(res.status()).toBe(201)
+    > 31 |       else expect(res.status(), 'El backend debería rechazar comentarios > 160 caracteres').toBeGreaterThanOrEqual(400)
+         |                                                                                             ^
+      32 |     })
+      33 |   }
+      34 | })
+        at /work/tests/api/feedback.api.spec.ts:31:93
+
+    Error Context: ../../reports/artifacts/api-feedback.api-RF05-Feed-adb74-de-161-caracteres-rechazado-api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../reports/artifacts/api-feedback.api-RF05-Feed-adb74-de-161-caracteres-rechazado-api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../reports/artifacts/api-feedback.api-RF05-Feed-adb74-de-161-caracteres-rechazado-api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="api/seguridad-rendimiento.api.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="api" tests="4" failures="2" skipped="0" time="0.166" errors="0">
+<testcase name="RNF02 Seguridad (API) › TA-12 Login resiste inyección SQL (A03:2021 Injection)" classname="api/seguridad-rendimiento.api.spec.ts" time="0.05">
+<properties>
+<property name="respuesta" value="200 {&quot;authentication&quot;:{&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJkYXRhIjp7ImlkIjoxLCJ1c2VybmFtZSI6IiIsImVtYWlsIjoiYWR">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/api-seguridad-rendimiento.-c806d-ión-SQL-A03-2021-Injection--api/error-context.md]]
+
+[[ATTACHMENT|artifacts/api-seguridad-rendimiento.-c806d-ión-SQL-A03-2021-Injection--api/trace.zip]]
+]]>
+</system-out>
+<failure message="Una inyección SQL no debe autenticar al usuario" type="expect.toBe">
+<![CDATA[  [api] › api/seguridad-rendimiento.api.spec.ts:5:7 › RNF02 Seguridad (API) › TA-12 Login resiste inyección SQL (A03:2021 Injection) 
+
+    Error: Una inyección SQL no debe autenticar al usuario
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 401
+    Received: 200
+
+       6 |     const res = await request.post('/rest/user/login', { data: { email: "' OR 1=1--", password: 'cualquiera' } })
+       7 |     test.info().annotations.push({ type: 'respuesta', description: `${res.status()} ${(await res.text()).slice(0, 120)}` })
+    >  8 |     expect(res.status(), 'Una inyección SQL no debe autenticar al usuario').toBe(401)
+         |                                                                             ^
+       9 |   })
+      10 |
+      11 |   test('TA-13 Backend rechaza contraseña de 4 caracteres (validación del lado servidor)', async ({ request }) => {
+        at /work/tests/api/seguridad-rendimiento.api.spec.ts:8:77
+
+    Error Context: ../../reports/artifacts/api-seguridad-rendimiento.-c806d-ión-SQL-A03-2021-Injection--api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../reports/artifacts/api-seguridad-rendimiento.-c806d-ión-SQL-A03-2021-Injection--api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../reports/artifacts/api-seguridad-rendimiento.-c806d-ión-SQL-A03-2021-Injection--api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="RNF02 Seguridad (API) › TA-13 Backend rechaza contraseña de 4 caracteres (validación del lado servidor)" classname="api/seguridad-rendimiento.api.spec.ts" time="0.061">
+<properties>
+<property name="respuesta" value="201">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/api-seguridad-rendimiento.-826c7-lidación-del-lado-servidor--api/error-context.md]]
+
+[[ATTACHMENT|artifacts/api-seguridad-rendimiento.-826c7-lidación-del-lado-servidor--api/trace.zip]]
+]]>
+</system-out>
+<failure message="El servidor debe aplicar la misma regla 5..40 que la UI" type="expect.toBeGreaterThanOrEqual">
+<![CDATA[  [api] › api/seguridad-rendimiento.api.spec.ts:11:7 › RNF02 Seguridad (API) › TA-13 Backend rechaza contraseña de 4 caracteres (validación del lado servidor) 
+
+    Error: El servidor debe aplicar la misma regla 5..40 que la UI
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 400
+    Received:    201
+
+      12 |     const res = await registerUser(request, uniqueEmail('pwd4'), str(4, 'x'))
+      13 |     test.info().annotations.push({ type: 'respuesta', description: `${res.status()}` })
+    > 14 |     expect(res.status(), 'El servidor debe aplicar la misma regla 5..40 que la UI').toBeGreaterThanOrEqual(400)
+         |                                                                                     ^
+      15 |   })
+      16 |
+      17 |   test('TA-14 Endpoint administrativo requiere autenticación', async ({ request }) => {
+        at /work/tests/api/seguridad-rendimiento.api.spec.ts:14:85
+
+    Error Context: ../../reports/artifacts/api-seguridad-rendimiento.-826c7-lidación-del-lado-servidor--api/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../reports/artifacts/api-seguridad-rendimiento.-826c7-lidación-del-lado-servidor--api/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../reports/artifacts/api-seguridad-rendimiento.-826c7-lidación-del-lado-servidor--api/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="RNF02 Seguridad (API) › TA-14 Endpoint administrativo requiere autenticación" classname="api/seguridad-rendimiento.api.spec.ts" time="0.031">
+</testcase>
+<testcase name="RNF01 Rendimiento (API) › TA-15 Búsqueda de productos responde en menos de 3 s" classname="api/seguridad-rendimiento.api.spec.ts" time="0.024">
+<properties>
+<property name="tiempo_ms" value="15">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="ui/autenticacion.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="ui-chromium" tests="3" failures="0" skipped="0" time="2.134" errors="0">
+<testcase name="RF01 Autenticación (UI) › TA-01 Inicio de sesión exitoso con credenciales válidas" classname="ui/autenticacion.spec.ts" time="1.082">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-autenticacion-RF01-Aute-d493f-so-con-credenciales-válidas-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF01 Autenticación (UI) › TA-02 Inicio de sesión rechazado con contraseña incorrecta (clase inválida)" classname="ui/autenticacion.spec.ts" time="0.589">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-autenticacion-RF01-Aute-a08f1--incorrecta-clase-inválida--ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF01 Autenticación (UI) › TA-03 Botón de login deshabilitado con campos vacíos (clase inválida)" classname="ui/autenticacion.spec.ts" time="0.463">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-autenticacion-RF01-Aute-f71b8-mpos-vacíos-clase-inválida--ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/busqueda-canasta.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="ui-chromium" tests="3" failures="0" skipped="0" time="2.024" errors="0">
+<testcase name="RF03/RF04 Búsqueda y canasta (UI) › TA-06 Búsqueda de producto existente muestra resultados" classname="ui/busqueda-canasta.spec.ts" time="0.561">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-busqueda-canasta-RF03-R-54d6b-xistente-muestra-resultados-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF03/RF04 Búsqueda y canasta (UI) › TA-07 Búsqueda sin coincidencias no muestra productos" classname="ui/busqueda-canasta.spec.ts" time="0.517">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-busqueda-canasta-RF03-R-91d5d-encias-no-muestra-productos-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF03/RF04 Búsqueda y canasta (UI) › TA-08 Agregar producto a la canasta desde la UI" classname="ui/busqueda-canasta.spec.ts" time="0.946">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-busqueda-canasta-RF03-R-3274c-to-a-la-canasta-desde-la-UI-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui/registro.spec.ts" timestamp="2026-11-08T20:02:14.493Z" hostname="ui-chromium" tests="5" failures="0" skipped="0" time="4.681" errors="0">
+<testcase name="RF02 Registro - valores límite de contraseña (UI) › TA-04 Contraseña de 4 caracteres =&gt; rechazada" classname="ui/registro.spec.ts" time="0.92">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-registro-RF02-Registro--81bd9-a-de-4-caracteres-rechazada-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF02 Registro - valores límite de contraseña (UI) › TA-04 Contraseña de 5 caracteres =&gt; aceptada" classname="ui/registro.spec.ts" time="0.886">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-registro-RF02-Registro--07211-ña-de-5-caracteres-aceptada-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF02 Registro - valores límite de contraseña (UI) › TA-04 Contraseña de 40 caracteres =&gt; aceptada" classname="ui/registro.spec.ts" time="0.885">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-registro-RF02-Registro--b72d3-a-de-40-caracteres-aceptada-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF02 Registro - valores límite de contraseña (UI) › TA-04 Contraseña de 41 caracteres =&gt; rechazada" classname="ui/registro.spec.ts" time="0.891">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-registro-RF02-Registro--85672--de-41-caracteres-rechazada-ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="RF02 Registro - valores límite de contraseña (UI) › TA-05 Registro completo de usuario nuevo (flujo feliz)" classname="ui/registro.spec.ts" time="1.099">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|artifacts/ui-registro-RF02-Registro--ba135--usuario-nuevo-flujo-feliz--ui-chromium/test-finished-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

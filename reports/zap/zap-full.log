@@ -1,0 +1,81 @@
+ Container qa-itm-zap-run-d8347c0c738e Creating 
+ Container qa-itm-zap-run-d8347c0c738e Created 
+Found Java version 17.0.21
+Available memory: 32012 MB
+Using JVM args: -Xmx8003m
+300 [main] INFO  org.parosproxy.paros.Constant - Copying default configuration to /home/zap/.ZAP/config.xml
+370 [main] INFO  org.parosproxy.paros.Constant - Creating directory /home/zap/.ZAP/session
+370 [main] INFO  org.parosproxy.paros.Constant - Creating directory /home/zap/.ZAP/dirbuster
+370 [main] INFO  org.parosproxy.paros.Constant - Creating directory /home/zap/.ZAP/fuzzers
+370 [main] INFO  org.parosproxy.paros.Constant - Creating directory /home/zap/.ZAP/plugin
+Nov 08, 2026 8:03:24 PM java.util.prefs.FileSystemPreferences$1 run
+INFO: Created user preferences directory.
+Job passiveScan-config set maxAlertsPerRule = 10
+Job requestor set url = http://juice-shop:3000/
+Job requestor set url = http://juice-shop:3000/rest/products/search?q=apple
+Job requestor set url = http://juice-shop:3000/api/Products
+Job requestor set url = http://juice-shop:3000/rest/track-order/5267-f9cd5882f54c75a3
+Job requestor set url = http://juice-shop:3000/rest/user/whoami
+Job requestor set url = http://juice-shop:3000/ftp/
+Job requestor set url = http://juice-shop:3000/rest/admin/application-configuration
+Job requestor set url = http://juice-shop:3000/rest/user/login
+Job requestor set method = POST
+Job requestor set httpVersion = HTTP/1.1
+Job requestor set headers = [Content-Type: application/json]
+Job requestor set data = {"email":"test@itm-qa.test","password":"test123"}
+Job requestor set url = http://juice-shop:3000/api/Feedbacks
+Job requestor set method = POST
+Job requestor set httpVersion = HTTP/1.1
+Job requestor set headers = [Content-Type: application/json]
+Job requestor set data = {"comment":"zap","rating":3,"captchaId":0,"captcha":"0"}
+Job spider set context = juice-shop
+Job spider set maxDuration = 3
+Job passiveScan-wait set maxDuration = 5
+Job activeScan set context = juice-shop
+Job activeScan set maxScanDurationInMins = 25
+Job activeScan set maxRuleDurationInMins = 3
+Job activeScan set threadPerHost = 4
+Job passiveScan-wait set maxDuration = 5
+Job report set template = traditional-html
+Job report set reportDir = /zap/wrk
+Job report set reportFile = zap-full-report.html
+Job report set reportTitle = OWASP ZAP - Juice Shop (Caso Práctico ITM 2026)
+Job report set template = traditional-json
+Job report set reportDir = /zap/wrk
+Job report set reportFile = zap-full-report.json
+Job report set template = traditional-md
+Job report set reportDir = /zap/wrk
+Job report set reportFile = zap-full-report.md
+Job passiveScan-config started
+Job passiveScan-config finished, time taken: 00:00:00
+Job requestor started
+Job requestor requesting URL http://juice-shop:3000/
+Job requestor requesting URL http://juice-shop:3000/rest/products/search?q=apple
+Job requestor requesting URL http://juice-shop:3000/api/Products
+Job requestor requesting URL http://juice-shop:3000/rest/track-order/5267-f9cd5882f54c75a3
+Job requestor requesting URL http://juice-shop:3000/rest/user/whoami
+Job requestor requesting URL http://juice-shop:3000/ftp/
+Job requestor requesting URL http://juice-shop:3000/rest/admin/application-configuration
+Job requestor requesting URL http://juice-shop:3000/rest/user/login
+Job requestor requesting URL http://juice-shop:3000/api/Feedbacks
+Job requestor finished, time taken: 00:00:06
+Job spider started
+Job spider requesting URL http://juice-shop:3000
+Job spider found 277 URLs
+Job spider finished, time taken: 00:00:12
+Job passiveScan-wait started
+Job passiveScan-wait finished, time taken: 00:00:00
+Job activeScan started
+Job activeScan finished, time taken: 00:05:36
+Job passiveScan-wait started
+Job passiveScan-wait finished, time taken: 00:00:00
+Job report started
+Job report generated report /zap/wrk/zap-full-report.html
+Job report finished, time taken: 00:00:00
+Job report started
+Job report generated report /zap/wrk/zap-full-report.json
+Job report finished, time taken: 00:00:00
+Job report started
+Job report generated report /zap/wrk/zap-full-report.md
+Job report finished, time taken: 00:00:00
+Automation plan succeeded!

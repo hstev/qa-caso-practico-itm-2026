@@ -1,0 +1,13 @@
+id;descripcion;severidad;prioridad;estado;componente;owasp_2025;evidencia
+"DEF-01";"Inyección SQL en inicio de sesión permite autenticarse como administrador sin contraseña";"Crítico";"P1";"Abierto";"routes/login.ts (POST /rest/user/login)";"A05:2025 Injection";"TA-12; Figura de detalle TA-12"
+"DEF-02";"Clave privada RSA de firma JWT y credenciales embebidas en el código fuente";"Crítico";"P1";"Abierto";"lib/insecurity.ts";"A04:2025 Cryptographic Failures";"SonarQube secrets:S6706, typescript:S6437"
+"DEF-03";"XSS basado en DOM en el término de búsqueda";"Alto";"P1";"Abierto";"frontend search-result (bypassSecurityTrustHtml)";"A05:2025 Injection";"CP-10; SonarQube typescript:S6268"
+"DEF-04";"Directorio /ftp con documentos internos y copias de respaldo accesible sin autenticación";"Alto";"P1";"Abierto";"routes/fileServer.ts, server.ts";"A01:2025 Broken Access Control";"CP-11"
+"DEF-05";"Posible inyección SQL en el parámetro q de /rest/products/search";"Alto";"P1";"Abierto";"routes/search.ts";"A05:2025 Injection";"ZAP 40018 (escaneo activo)"
+"DEF-06";"El servicio se detiene por agotamiento de memoria (heap) bajo tráfico de escaneo automatizado";"Alto";"P2";"Abierto (mitigado en laboratorio)";"Proceso Node.js (servidor)";"A10:2025 Mishandling of Exceptional Conditions";"juice-shop-oom-crash.log (exit 139)"
+"DEF-07";"El servidor acepta contraseñas de 4 caracteres (regla 5–40 solo en el cliente)";"Alto";"P2";"Abierto";"POST /api/Users";"A07:2025 Authentication Failures";"TA-13"
+"DEF-08";"El servidor acepta calificaciones fuera del rango 1–5 (0 y 6)";"Medio";"P2";"Abierto";"models/feedback.ts, POST /api/Feedbacks";"A06:2025 Insecure Design";"TA-10"
+"DEF-09";"El servidor acepta comentarios de más de 160 caracteres";"Medio";"P3";"Abierto";"POST /api/Feedbacks";"A06:2025 Insecure Design";"TA-11"
+"DEF-10";"Ausencia de cabeceras de seguridad (CSP, COEP) y CORS permisivo";"Medio";"P3";"Abierto";"server.ts (middleware HTTP)";"A02:2025 Security Misconfiguration";"ZAP 10038, 10098, 90004"
+"DEF-11";"Divulgación de errores de aplicación y de IP privada en respuestas";"Bajo";"P3";"Abierto";"Manejador de errores Express, /rest/admin/application-configuration";"A02:2025 Security Misconfiguration";"ZAP 90022, 2"
+"DEF-12";"Mensajes de error del servidor sin traducir con la interfaz en español (límite de compra, inicio de sesión)";"Bajo";"P4";"Abierto";"routes/basketItems.ts, routes/login.ts / i18n";"—";"CP-07, CP-02"

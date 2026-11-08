@@ -1,0 +1,14 @@
+{
+  "CP-01": "Redirige a /search y el menú de cuenta muestra cp01.1794168112760.431805@itm-qa.test",
+  "CP-02": "Mensaje: \"Invalid email or password.\"; permanece en /login",
+  "CP-03": "Botón Registrar deshabilitado; errores: Las contraseñas no coinciden",
+  "CP-04": "Botón Registrar deshabilitado; errores: La dirección de correo no es válida.",
+  "CP-05": "Escritos 159 => aceptados 159 | Escritos 160 => aceptados 160 | Escritos 161 => aceptados 160",
+  "CP-06": "Sin calificación botón deshabilitado=true; con 5 estrellas deshabilitado=false; feedback enviado",
+  "CP-07": "Fila:  Jugo de manzana (1000ml) 5 1.99¤; mensaje: \"You can order only up to 5 items of this product.\n X   You can order only up to 5 items of this product.\n X   You can order only up to 5 items of this product.\"",
+  "CP-08": "1111110 => rechazado | 1111111 => aceptado | 9999999999 => aceptado | 10000000000 => rechazado",
+  "CP-09": "Escrito 8 => valor 8 car.; botón habilitado | Escrito 9 => valor 9 car.; botón deshabilitado",
+  "CP-10": "Se ejecutó JavaScript inyectado: alert(\"XSS-ITM\") => DOM XSS",
+  "CP-11": "Listado público con 13 entradas: ~, ftp, quarantine10/11/2026 10:37:21 PM, acquisitions.md90910/11/2026 10:37:21 PM, announcement_encrypted.md36923710/11/2026 10:37:21 PM, coupons_2013.md.bak13110/11/2026 10:37:21 PM, eastere.gg32410/11/2026 10:37:21 PM, encrypt.pyc57310/11/2026 10:37:21 PM",
+  "CP-12": "Vista 375px: desbordamiento horizontal=false; menú hamburguesa visible=true; textos en español=true"
+}
