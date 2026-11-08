@@ -1,0 +1,12 @@
+# Secretos locales (token y contraseña de SonarQube)
+.env
+# Código fuente del sistema bajo prueba (se clona con `make sut`)
+sut/
+# Dependencias y artefactos pesados
+node_modules/
+tests/e2e/node_modules/
+reports/playwright/artifacts/
+reports/evidence/evidence-artifacts/
+*.webm
+# Temporales de Word
+~$*.docx

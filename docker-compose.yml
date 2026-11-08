@@ -1,0 +1,118 @@
+# Laboratorio QA aislado - Caso Práctico Final ITM 2026
+# Todo corre en contenedores dentro del proyecto "qa-itm".
+#  - Red propia (qa-net); puertos publicados SOLO en 127.0.0.1
+#  - Sin privileged, sin network_mode: host, sin montajes fuera del repo
+#  - Imágenes con versión fija
+# Limpiar todo: docker compose down -v --rmi local
+name: qa-itm
+
+x-hardening: &hardening
+  security_opt:
+    - no-new-privileges:true
+  cap_drop:
+    - ALL
+
+networks:
+  qa-net:
+    name: qa-itm-net
+
+volumes:
+  sonar-data:
+  sonar-extensions:
+  sonar-logs:
+
+services:
+  # ---------- Sistema bajo prueba ----------
+  juice-shop:
+    image: bkimminich/juice-shop:v20.3.0
+    <<: *hardening
+    environment:
+      NODE_ENV: unsafe   # habilita todos los retos (comportamiento por defecto del laboratorio)
+      NODE_OPTIONS: --max-old-space-size=1536   # el heap por defecto se agotó durante el escaneo activo de ZAP (ver DEF-09)
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks: [qa-net]
+    healthcheck:
+      test: ["CMD", "/nodejs/bin/node", "-e", "fetch('http://localhost:3000/rest/admin/application-version').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    mem_limit: 2g
+
+  # ---------- Análisis estático ----------
+  sonarqube:
+    image: sonarqube:26.9.0.129388-community
+    profiles: ["sonar"]
+    security_opt:
+      - no-new-privileges:true
+    environment:
+      SONAR_ES_BOOTSTRAP_CHECKS_DISABLE: "true"
+    ports:
+      - "127.0.0.1:9000:9000"
+    volumes:
+      - sonar-data:/opt/sonarqube/data
+      - sonar-extensions:/opt/sonarqube/extensions
+      - sonar-logs:/opt/sonarqube/logs
+    networks: [qa-net]
+    mem_limit: 4g
+
+  sonar-scanner:
+    image: sonarsource/sonar-scanner-cli:12.2.0.4256_8.1.0
+    profiles: ["tools"]
+    <<: *hardening
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      SONAR_HOST_URL: http://sonarqube:9000
+      SONAR_TOKEN: ${SONAR_TOKEN:-}
+      SONAR_USER_HOME: /tmp/.sonar
+    volumes:
+      - ./sut/juice-shop:/usr/src
+      - ./security/sonar/sonar-project.properties:/usr/src/sonar-project.properties:ro
+    networks: [qa-net]
+
+  # ---------- Pruebas automatizadas (Playwright + TypeScript) ----------
+  playwright:
+    image: mcr.microsoft.com/playwright:v1.64.0-noble
+    profiles: ["tools"]
+    security_opt:
+      - no-new-privileges:true
+    user: "${UID:-1000}:${GID:-1000}"
+    ipc: private
+    working_dir: /work
+    environment:
+      HOME: /tmp
+      BASE_URL: http://juice-shop:3000
+      CI: "true"
+    volumes:
+      - ./tests/e2e:/work
+      - ./reports/playwright:/reports
+    networks: [qa-net]
+
+  # ---------- Rendimiento ----------
+  k6:
+    image: grafana/k6:1.8.2
+    profiles: ["tools"]
+    <<: *hardening
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      BASE_URL: http://juice-shop:3000
+    volumes:
+      - ./tests/perf:/scripts:ro
+      - ./reports/k6:/reports
+    networks: [qa-net]
+
+  # ---------- Análisis dinámico ----------
+  zap:
+    image: zaproxy/zap-stable:2.17.0
+    profiles: ["tools"]
+    security_opt:
+      - no-new-privileges:true
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      HOME: /home/zap
+    volumes:
+      - ./reports/zap:/zap/wrk
+      - ./security/zap:/zap/config:ro
+    networks: [qa-net]
+    mem_limit: 3g
