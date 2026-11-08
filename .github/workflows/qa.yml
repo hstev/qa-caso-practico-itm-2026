@@ -1,0 +1,71 @@
+# Pipeline de pruebas automatizadas - Caso Práctico ITM 2026
+# Se ejecuta en cada push/PR: levanta Juice Shop como servicio y corre Playwright, k6 y ZAP baseline.
+name: QA Juice Shop
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pruebas:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    services:
+      juice-shop:
+        image: bkimminich/juice-shop:v20.3.0
+        ports: ["3000:3000"]
+    container:
+      image: mcr.microsoft.com/playwright:v1.64.0-noble
+    env:
+      BASE_URL: http://juice-shop:3000
+    steps:
+      - uses: actions/checkout@v4
+      - name: Esperar a Juice Shop
+        run: for i in $(seq 1 30); do curl -sf $BASE_URL/rest/admin/application-version && break; sleep 3; done
+      - name: Instalar dependencias
+        working-directory: tests/e2e
+        run: npm install --no-audit --no-fund
+      - name: Ejecutar Playwright (UI + API)
+        working-directory: tests/e2e
+        run: npx playwright test
+        # Las pruebas que evidencian defectos conocidos (DEF-xx) fallan a propósito;
+        # el pipeline publica el reporte igualmente.
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: reporte-playwright
+          path: /reports/
+
+  rendimiento:
+    runs-on: ubuntu-24.04
+    services:
+      juice-shop:
+        image: bkimminich/juice-shop:v20.3.0
+        ports: ["3000:3000"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Esperar a Juice Shop
+        run: for i in $(seq 1 30); do curl -sf localhost:3000/rest/admin/application-version && break; sleep 3; done
+      - name: k6 carga básica
+        run: |
+          docker run --rm --network host -e BASE_URL=http://localhost:3000 \
+            -v "$PWD/tests/perf:/scripts:ro" grafana/k6:1.8.2 run /scripts/carga-basica.js
+
+  dast:
+    runs-on: ubuntu-24.04
+    services:
+      juice-shop:
+        image: bkimminich/juice-shop:v20.3.0
+        ports: ["3000:3000"]
+    steps:
+      - name: OWASP ZAP baseline
+        uses: zaproxy/action-baseline@v0.14.0
+        with:
+          target: http://localhost:3000
+          allow_issue_writing: false
+          fail_action: false
