@@ -63,6 +63,16 @@ jobs:
         image: bkimminich/juice-shop:v20.3.0
         ports: ["3000:3000"]
     steps:
+      # Sin esta espera ZAP arranca antes que Juice Shop, recibe "Connection refused"
+      # y termina con "Failed to access summary file /home/zap/zap_out.json" (exit 3).
+      - name: Esperar a Juice Shop
+        run: |
+          for i in $(seq 1 40); do
+            curl -sf http://localhost:3000/rest/admin/application-version && exit 0
+            sleep 3
+          done
+          echo "Juice Shop no respondió a tiempo" >&2
+          exit 1
       - name: OWASP ZAP baseline
         uses: zaproxy/action-baseline@v0.14.0
         with:
